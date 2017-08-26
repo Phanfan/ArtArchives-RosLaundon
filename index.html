@@ -4,54 +4,110 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- This is where you would insert your own stylesheet if needed -->
-  <link rel="stylesheet" href="css/mystyles.css">
 <!-- Or we could use an internal style sheet -->
 <style>
+  html { position: relative; min-height: 100%; }
+  body { margin-bottom: 60px; }
   .bg1 { background-color:lavender; }
   .bg2 { background-color:lavenderblush; }
-  .bgpink { background-color:pink; }
+  .bgpink { background-color:MistyRose; }
+  .bgindigo { background-color:indigo; color: white; }
+  .bgdarkgrey { background-color:DimGrey; color: white; padding: 30px; }
+  .footer { position: absolute; bottom: 0; width: 100%; height: 60px; }
 </style>
-<!-- Note: javascript libraries omitted at this stage since not used -->  
+
 </head>
 <body>
+  <nav class="navbar navbar-default">
+   <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/coffee.png" style="padding: 0; margin: 0;"</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=".">HOME</a></li>
+      <li><a href="page1.html">PAGE 1</a></li>
+      <li><a href="page2.html">PAGE 2</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHER
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="other1.html">Other Topics 1</a></li>
+          <li><a href="other2.html">Other Topics 2</a></li>
+          <li><a href="other3.html">Other Topics 3</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navbar -->
 
-<div class="jumbotron text-center" style="background-color: #1abc9c; color: white;">
-  <h1>Bootstrap Test Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  
+<div class="jumbotron text-center bgindigo">
+  <h1>Australian Public Buildings</h1>
+  <p>This is a Bootstrap demonstration page that uses a non-fluid container class for the main content.</p> 
 </div>
   
-<div class="container-fluid">
+<div class="container">
 <!-- Three column row. Note how background-color classes bg1, bg2 and bgpink are used-->  
   <div class="row">
     <div class="col-sm-4 bg1">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
+      <h3>Brisbane</h3>
+      <figure>
+      <img src="images/brisbane.png" title="Brisbane Town Hall">
+        <figcaption>Brisbane Town Hall</figcaption>
+      </figure>
+      </div>
 
     <div class="col-sm-4 bg2">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
+      <h3>Sydney</h3>
+      <figure>
+      <img src="images/sydneytownhall.png" title="Sydney Town Hall">
+      <figcaption>Sydney Town Hall</figcaption>
+      </figure>
+      </div>
     
     <div class="col-sm-4 bg1">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Hobart</h3>        
+      <figure>
+      <img src="images/hobart.png" title="Hobart Town Hall">
+      <figcaption>Hobart Town Hall</figcaption>
+      </figure>
     </div>
   <!-- End of Row -->
   </div>
 
  <!-- Now a full width, single column row -->
  <div class="row bgpink" style="padding: 50px;">
-   <p> This is a full width row.</p>
+   <p><strong>Brisbane City Hall</strong></p>
+   <p>Built between 1920 and 1930, the heritage-listed City Hall is seen as the heart of Brisbane and has been the backdrop to many cultural, social and civic events.</p>
+<p>Having undergone a $215 million restoration, City Hall is the perfect place to explore Brisbane's history with daily guided tours showcasing the Main Auditorium, Father Henry Willis Organ and the iconic clock tower.</p>
+<p>The Museum of Brisbane, another feature of City Hall, showcases artworks from the City of Brisbane collection as well as contemporary exhibitions by some of the city's leading artists.</p>
+<p><strong>Sydney Town Hall</strong></p>
+<p>The Sydney Town Hall is a late 19th-century building, housing the chambers of the Lord Mayor of Sydney, council offices, and venues for meetings and functions. It is located on George Street, in the Sydney central business district opposite the Queen Victoria Building and alongside St Andrew's Cathedral. Sited above the Town Hall station and between the city shopping and entertainment precincts, the steps of the Town Hall are a popular meeting place.</p>
+<p>The Town Hall is listed on the Register of the National Estate and the NSW State Heritage Register and is part of the heritage-listed Town Hall precinct which includes the Queen Victoria Building, St Andrews Cathedral, the Gresham Hotel and the former Bank of New South Wales.</p>
+
+</p>
  </div>
 
-  <!-- end container -->
-  </div>
+ <!-- end container -->
+ </div>
 
+<!-- footer -->
+<footer>
+  <div class="footer text-center bgdarkgrey">Copyright 2017</div>
+</footer>     
 </body>
 </html>
