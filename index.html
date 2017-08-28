@@ -26,6 +26,28 @@
 }
   h2 { text-align: center; }
   h3 { text-align: center; }
+  <!--below copied from CSS-->
+  btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+}
+
+.btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
 </style>
 
 </head>
@@ -67,6 +89,13 @@
 <!-- Three column row. Note how [previous] background-color classes bg1, bg2 and bgpink are used-->  
   <div class="row">
     <div class="col-sm-3 bgcream">
+      <!--below copied from css-->
+      <div class="btn-group">
+  <button class="button">Button</button>
+  <button class="button">Button</button>
+  <button class="button">Button</button>
+  <button class="button">Button</button>
+</div>
       
       </div>
 
