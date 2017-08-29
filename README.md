@@ -1,2 +1,1 @@
-# Test-Pictures
-My Art
+Previously called "Test -Pictures".
