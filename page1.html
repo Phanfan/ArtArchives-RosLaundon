@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RosL-ArtArchive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- This is where you would insert your own stylesheet if needed -->
+<!-- Or we could use an internal style sheet -->
+<style>
+  html { position: relative; min-height: 100%; }
+  body { margin-bottom: 60px; }
+  figcaption {color: brown;}
+  .float-center {float:center;}
+  .bgcream {background-color:cornsilk; }
+  .bgturq { background-color:#00cc99; color:brown; }
+  .bgmauve {background-color:thistle; color:teal; }
+  .bgpurple { background-color:Purple; color: white; padding: 30px; }
+  .bgorchid { background-color:#DA70D6; color:white; }
+  .footer { position: absolute; bottom: 0; width: 100%; height: 60px; }
+  .subhead { font-family: Bookman; }
+  h2 { text-align: center; }
+  h3 { text-align: center; } 
+ 
+</style>
+</head>
+<body>
+  <!--I added class="bgorchid" to next line-->
+   <nav class="navbar navbar-default">
+   <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/coffee.png" style="padding: 0; margin: 0;"</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=".">HOME</a></li>
+      <li><a href="page1.html">WATERCOLOUR</a></li>
+      <li><a href="page2.html">BOOTSTRAPEGS</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHER
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="other1.html">Other Topics 1</a></li>
+          <li><a href="other2.html">Other Topics 2</a></li>
+          <li><a href="other3.html">Other Topics 3</a></li>
+          <p class="navbar-text">Some more text</p>
+        </ul>
+        <p class="navbar-text">Start rummaging from these choices</p>
+      </ul>
+    </div>
+  </div>   
+</nav>
+<!-- end navbar -->
+    <div class="jumbotron text-center bgmauve">
+  <h1>Art Archives - Ros Laundon</h1>
+  <h2 class="subhead"><em>My art in different media.</em></h2> 
+</div>
+<div class="container">
+<!-- Three column row. -->  
+  <div class="row">
+    <div class="col-sm-2 bgcream">
+      <div class="container">
+  <h2>Vertical Button Group</h2>
+  <p>Categories:</p>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">Home</button>
+    <button type="button" class="btn btn-primary">Watercolour</button>
+    <button type="button" class="btn btn-primary">Oil</button>
+    <button type="button" class="btn btn-primary">Acrylic</button>
+    <button type="button" class="btn btn-primary">Sketch</button>
+    <button type="button" class="btn btn-primary">Other</button>
+  </div>
+</div>
+      
+      </div>
 
+    <div class="col-sm-6 bgcream">
+      <h3 style="color:brown">Acrylic</h3>
+      <figure>
+      <img src="images/FirebirdACRYL503KB.png" alt="Abstrtact-strong diagonal firey character" title="Firebird Abstract-standing up fun!">
+      <figcaption>Firebird</figcaption>
+      </figure>
+      <h3 style="color:brown;">Watercolour</h3>
+      <figure>
+      <img src="images/HamiltonWC369kb.png" title="Hamilton Reach from hamilton Hill-en plein air">
+        <figcaption>Hamilton Reach</figcaption>
+      </figure>
+      </div>
+    
+    <div class="col-sm-4 bgcream">
+      <h3 style="color:brown">Oil</h3>        
+      <figure>
+      <img src="images/JoFraserOIL307kb.png" class="float-center" margin alt="Woman walking away from surf reflected in wet sand" title="Jo at Fraser Island-just finished pippying">
+      <figcaption>Jo at Fraser</figcaption>
+      </figure>
+        <figure>
+          <h3 style="color:brown">Sketch</h3>
+          <img src="images/Brachichiton bidwillii SKETCH233kb.png" alt="Botanical sketch of Brachichiton bidwillii." style="width:304px;height:380px;" title="Brachichiton bidwillii" height="60%">
+          <figcaption>Brachichiton bidwillii sketch</figcaption>
+      </figure>               
+    <!-- <img "#" src="images/BesideTheHutSKETCH454kb.png" alt="Bush scene beside The Hut, Chapel Hill." title="Bush at The Hut, Chapel Hill">
+                  <figcaption>Bush Scene, The Hut</figcaption> -->
+      
+    </div>
+  <!-- End of Row -->
+  </div>
+
+ <!-- Now a full width, single column row -->
+ <div class="row bgmauve" style="padding: 30px;">
+   <h2>THIS BODY OF ART IS SORTED BY MEDIA.</h2>
+   <h2 style="color:DarkOrchid">Within each medium, art is sorted by subject matter then loosely sorted by age.
+     <h3><em>Some works have escaped before being photographed so they are not here.</em></h3>
+ </div>
+
+ <!-- end container -->
+ </div>
+
+<!-- footer -->
+<footer>
+  <div class="footer text-center bgpurple">Copyright 2017</div>
+</footer>     
+</body>
+</html>
